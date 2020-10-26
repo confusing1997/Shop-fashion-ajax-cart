@@ -27,7 +27,8 @@ Trang web được phát triển dựa trên tiêu chí " ***Customer is our fir
 - [x] CSS
 - [x] SQL
 - [x] MySQL
-6. Status of Our project: 
+
+5. Status of Our project: 
 
 | Progress | Status |
 | ------------- | ------------- |
