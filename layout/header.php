@@ -71,10 +71,14 @@
                            }
                         } 
                      ?>
-                        <li><span class="total">Total <strong>$60.00</strong></span><button class="checkout" onClick="location.href='checkout.html'">CheckOut</button></li>
+                        <li>
+                           <span class="total">Tổng <strong><?= number_format($_SESSION['sum_price']) ?></strong></span>
+                           <button class="checkout" onClick="location.href='checkout.html'">CheckOut</button>
+                        </li>
                      </ul>
                   </li>
                </ul>
+
                <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
                <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
