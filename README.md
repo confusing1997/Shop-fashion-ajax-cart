@@ -6,7 +6,7 @@ Trang web được phát triển dựa trên tiêu chí " ***Customer is our fir
 
 1. Trang web sự dụng MySQL để truy vấn từ Database:
 ```
-- Mô hình kết nối sử dụng OOP, PDO hoặc Procedural. 
+- Mô hình kết nối sử dụng Procedural SQL (future feature is OOP). 
 ```
 2. Sử dụng **Ajax** để update thông tin mà không phải reload lại page:
 ```
