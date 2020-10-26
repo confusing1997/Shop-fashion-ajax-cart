@@ -61,7 +61,7 @@
                                     ?>
                                  </p>
                                  <a onclick="return confirm('Bạn có muốn xóa sản phẩm này?');" 
-                                 href="index.php?page=delete-product&id=<?= $value['id'] ?>" 
+                                 href="index.php?page=delete-cart&id=<?= $value['id'] ?>" 
                                  class="remove"><img src="images/remove.png" alt="remove"></a>
                               </div>
                            </div>

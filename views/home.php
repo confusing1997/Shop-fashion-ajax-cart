@@ -9,7 +9,7 @@
       <a href="index.php?page=order-detail"><button class="btn btn-danger">Xem chi tiết</button></a>
    </div>
 <?php
-   unset($_SESSION['noti_cart']);
+   unset($_SESSION['noti_cart']); 
    }
 ?>
 
@@ -26,10 +26,17 @@
            ?>
                <div class="col-md-3 col-sm-6">
                   <div class="products">
+
                      <div class="offer">HOT</div>
-                     <div class="thumbnail"><a href="index.php?page=detail-product"><img src="images/products/<?php echo $valueHot['img']; ?>" alt="Product Name"></a></div>
+
+                     <div class="thumbnail">
+                        <a href="index.php?page=detail-product">
+                           <img src="images/products/<?php echo $valueHot['img']; ?>" alt="Product Name">
+                        </a>
+                     </div>
+                     
                      <div class="productname"><?php echo $valueHot['name']; ?></div>
-                     <h4 class="price"><?php echo number_format($valueHot['price']); ?></h4>
+                     <h4 class="price"><?= number_format($valueHot['price']); ?></h4>
 
                      <div class="button_group">
                         <a href="index.php?page=order&id=<?php  echo $valueHot['id']; ?>">

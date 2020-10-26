@@ -57,7 +57,7 @@
                   </td>
                   <td>
                     <h5>
-                      <?php echo number_format($value['price']); ?>
+                      <?= number_format($value['price']); ?>
                     </h5>
                   </td>
                   <td>
@@ -78,7 +78,7 @@
                     <a onclick="return confirm('Bạn có muốn xóa sản phẩm khỏi giỏ hàng không? ');" href="index.php?page=delete-cart&id=<?php echo $value['id']; ?>">
                       <img src="images/remove.png" alt="">
                     </a>
-                    <button class="btn btn-danger delCart" value="<?php echo $value['id']; ?>">
+                    <button class="btn btn-danger delCart" value="<?= $value['id']; ?>">
                       Xóa
                     </button>
                   </td>
@@ -113,7 +113,7 @@
               Tổng tiền
             </h5>
             <span>
-              <?php echo number_format($_SESSION['sum_price']); ?>
+              <?= number_format($_SESSION['sum_price']); ?>
             </span>
           </div>
         </div>
