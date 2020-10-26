@@ -1,0 +1,12 @@
+﻿\\192.168.1.69
+
+- Hiển thị sản phẩm trong db ra (xong)
+- Cho người dùng đặt hàng (xong)
+- Hiển thị sản phẩm trong giỏ hàng (xong)
+- XD giỏ hàng lưu sản phẩm khách hàng muốn mua (xong)
+- Giỏ hàng: Cập nhật, xóa
+
+
+- Tiến hành đặt hàng.
+- Tiến hành gửi email đơn hàng cho khách
+- Quản trị: Nhận đơn hàng
