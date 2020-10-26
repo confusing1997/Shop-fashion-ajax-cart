@@ -38,33 +38,39 @@
 
                               foreach ($_SESSION['carts'] as $key => $value) {
                         ?>
+
+                        <li>
+                           <div class="cart-item">
+                              <div class="image">
+                                 <img src="images/products/<?= $value['img'] ?>" alt="">
+                              </div>
+
+                              <div class="item-description">
+                                 <p class="name"><?= $value['name'] ?></p>
+                                 <p>
+                                    Size: <span class="light-red">One size</span><br>
+                                    Quantity: <span class="light-red"><?= $value['qty'] ?></span></p>
+                              </div>
+                              <div class="right">
+                                 <p class="price">
+                                    <?php
+                                       $items_sum = $value['price'] * $value['qty'] / 1000;
+                                       $_SESSION['sum_price'] += $items_sum;
+                                       $_SESSION['sum_quantity'] += $value['qty'];
+                                       echo number_format($items_sum);
+                                    ?>
+                                 </p>
+                                 <a onclick="return confirm('Bạn có muốn xóa sản phẩm này?');" 
+                                 href="index.php?page=delete-product&id=<?= $value['id'] ?>" 
+                                 class="remove"><img src="images/remove.png" alt="remove"></a>
+                              </div>
+                           </div>
+                        </li>
                         
-                        <li>
-                           <div class="cart-item">
-                              <div class="image"><img src="images/products/thum/products-01.png" alt=""></div>
-                              <div class="item-description">
-                                 <p class="name">Lincoln chair</p>
-                                 <p>Size: <span class="light-red">One size</span><br>Quantity: <span class="light-red">01</span></p>
-                              </div>
-                              <div class="right">
-                                 <p class="price">$30.00</p>
-                                 <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="cart-item">
-                              <div class="image"><img src="images/products/thum/products-02.png" alt=""></div>
-                              <div class="item-description">
-                                 <p class="name">Lincoln chair</p>
-                                 <p>Size: <span class="light-red">One size</span><br>Quantity: <span class="light-red">01</span></p>
-                              </div>
-                              <div class="right">
-                                 <p class="price">$30.00</p>
-                                 <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
-                              </div>
-                           </div>
-                        </li>
+                        <?php
+                           }
+                        } 
+                     ?>
                         <li><span class="total">Total <strong>$60.00</strong></span><button class="checkout" onClick="location.href='checkout.html'">CheckOut</button></li>
                      </ul>
                   </li>
